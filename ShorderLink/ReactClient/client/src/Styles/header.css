@@ -1,0 +1,15 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+}
+
+.header a{
+    margin-left: 25px;
+}
+
+.header__name-about-section{
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    @ViewBag.AboutText
+</p>
+
+@if (User.FindFirst("userRole")?.Value == "admin")
+{
+    <h3>Change About Text</h3>
+    <form action="https://localhost:7288/Home/ChangeAbout" method="post">
+        <textarea name="text"></textarea>
+        <button class="btn btn-light">Change Text</button>
+    </form>
+}
